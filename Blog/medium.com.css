@@ -1,0 +1,262 @@
+/* ==UserStyle==
+@name           medium.com
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         EgoistDeveloper
+==/UserStyle== */
+@-moz-document domain("medium.com") {
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        background: #575c64;
+        height: 7px;
+        width: 7px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #b9b9b9;
+        border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #d6d6d6;
+    }
+
+    /* General */
+    * {
+        color: #bdbdbd;
+    }
+
+    svg {
+        fill: #bdbdbd;
+    }
+
+    a {
+        color: #33b5e5;
+    }
+
+    a:hover,
+    a:visited {
+        color: #0099CC;
+    }
+
+    input[type="text"],
+    textarea {
+        color: #eeeeee;
+        background-color: #575c64 !important;
+    }
+
+    body {
+        background-color: #1E1E1E;
+    }
+
+    blockquote {
+        margin-bottom: 10px;
+        background-color: #373232 !important;
+    }
+
+    *:focus {
+        outline: 0 !important;
+    }
+
+    /* Background */
+    .screenContent,
+    .surface,
+    .a.b.c {
+        background-color: #1E1E1E;
+    }
+
+    .metabar {
+        background-color: #2b2c2d !important;
+    }
+
+    /* Main Page Posts */
+
+    .extreme-container8col .streamItem article,
+    .cardChromeless {
+        background-color: #3d4146;
+        padding: 15px;
+    }
+
+    .uiScale .ui-capsSubtle {
+        color: #6f6f6f !important;
+    }
+
+    .u-noWrap span {
+        color: #6f6f6f !important;
+    }
+
+    .u-noWrap time {
+        color: #848484 !important;
+    }
+
+    .uiScale .postMetaInline {
+        color: #6f6f6f !important;
+    }
+
+    .uiScale .postMetaInline a {
+        color: #9e9e9e !important;
+    }
+
+    .uiScale .ui-h1,
+    .uiScale .ui-h2,
+    .uiScale .ui-h3,
+    .uiScale .ui-h4 {
+        color: #eeeeee !important;
+    }
+
+    .uiScale .ui-summary,
+    .link--darker {
+        color: #c8c8c8 !important;
+    }
+
+    .js-homeStream {
+        background-color: #3d4146;
+        padding-top: 30px;
+    }
+
+    .extremeHero-largeCard .extremeHero-postContent {
+        margin: 0px !important;
+    }
+
+    /* Sidebar */
+
+    .extremeSidebar,
+    .extremeSidebar .extremeAdaptiveSection {
+        background-color: #3d4146;
+    }
+
+    .u-background--brandSea {
+        background-color: transparent !important;
+    }
+
+    .u-backgroundGrayLightest {
+        background-color: #2b2c2d !important;
+    }
+
+    .u-borderBottomLighter {
+        border-bottom: 1px solid #c8c8c8 !important;
+    }
+
+    .u-borderTopLightest {
+        border-top: 1px solid #c8c8c8 !important;
+    }
+
+    .u-textColorLighter {
+        color: #c8c8c8 !important;
+    }
+
+    /* Footer Links */
+
+    footer .u-textColorNormal {
+        color: #c8c8c8 !important;
+    }
+
+    /* Popover */
+
+    .popover-inner {
+        background: #3d4146;
+        color: #9e9e9e !important;
+    }
+
+    .u-resetSpectrum .u-baseColor--buttonDark {
+        color: #c8c8c8 !important;
+    }
+
+    .u-resetSpectrum .u-baseColor--link.link--darker,
+    .u-resetSpectrum .u-baseColor--link.link--darker:hover,
+    .u-resetSpectrum .u-baseColor--link,
+    .u-resetSpectrum .u-baseColor--link:hover,
+    .popover-inner span {
+        color: #9e9e9e !important;
+    }
+
+    /* Page, Organization Page, Company Page etc */
+
+    .graf--h2,
+    .graf--h3,
+    .graf--h4 {
+        color: #c8c8c8 !important;
+    }
+
+    .heading-title--dark {
+        color: #adadad !important;
+    }
+
+    header.heading--borderedBottom {
+        border-bottom: 1px solid #828282 !important;
+    }
+
+    section {
+        color: #9e9e9e !important;
+    }
+
+    section>div {
+        background-color: #3d4146;
+        margin: 5px;
+    }
+
+    .postArticle.postArticle--short:not(.postArticle--letter) {
+        background: #3d4146 !important;
+        padding: 0px 15px;
+        margin: 15px 0px;
+    }
+
+    .u-textColorNormal {
+        color: #c8c8c8 !important;
+    }
+
+    .u-textColorDark {
+        color: #9e9e9e !important;
+    }
+
+    .heading--light,
+    .heading--light .heading-content,
+    .heading--light .heading-title {
+        color: #c8c8c8 !important;
+    }
+
+    .collectionHeader--layoutLarge .collectionHeader-blockNav {
+        background-color: #2b2c2d;
+    }
+
+
+    /* User Page */
+
+    .fo.s {
+        background-color: #1E1E1E;
+    }
+
+    .s.t.u.v.w.c.x.y.z,
+    .ar.as.at.au.av {
+        background-color: #2b2c2d !important;
+    }
+
+    .fx.fy.fz.ga.gb.s.c {
+        background-color: #3d4146;
+        box-shadow: none !important;
+        border: none !important;
+        margin: 15px 0px;
+    }
+
+    .cu,
+    .bh,
+    .el {
+        color: #c8c8c8 !important;
+    }
+
+    section>.s.c,
+    .ez.kr.as.ks.ds {
+        background: #3d4146 !important;
+        padding: 0px 15px;
+    }
+
+    .s.g>svg {
+        filter: invert(100%);
+    }
+}
