@@ -94,4 +94,8 @@
         color: #eeeeee !important;
         background-color: #ff3e4a !important;
     }
+	
+	.column-wrapper.jsx-2357984276{
+		max-width: 1300px !important;
+	}
 }
