@@ -1,0 +1,547 @@
+/* ==UserStyle==
+@name           MSDN Dark By EgoistDeveloper
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("social.msdn.microsoft.com") {
+    ::root {
+        --themecolor: #137bc6;
+        --background: #1E1E1E;
+        --barpopup: #2d2d2d;
+        --navpopup: #292323;
+        --thread: #292828;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        background: #2d3033;
+        height: 10px;
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 0px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #0095ff77;
+        border-radius: 0px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #137bc677;
+    }
+
+    ::selection {
+        color: #bdbdbd;
+        background: #3e697e77;
+    }
+
+    /* General */
+    * {
+        color: #bdbdbd !important;
+    }
+
+    svg {
+        fill: #bdbdbd;
+    }
+
+    a {
+        color: #8b8b8b !important;
+        transition: all 1s !important;
+    }
+
+    a:hover {
+        color: #137bc6 !important;
+        text-decoration: none !important;
+    }
+
+    input,
+    textarea,
+    .form-control,
+    #inputTagSearch,
+    #tagSearch {
+        color: #eeeeee;
+        background-color: #373232 !important;
+        border: 1px solid #4d4d4d !important;
+        border-radius: 0px !important;
+    }
+
+    body {
+        background-color: #1E1E1E;
+    }
+
+    blockquote {
+        margin-bottom: 10px;
+        background-color: #373232 !important;
+    }
+
+    *:focus {
+        outline: 0 !important;
+    }
+
+    /* Main */
+
+    #BodyBackground,
+    #msdn-technet-en-home,
+    .inner {
+        background: #1E1E1E !important;
+        background-color: #1E1E1E !important;
+    }
+
+    #homePageContentContainer,
+    #threadPageContentContainer,
+    #JelloSizer {
+        min-width: 75%;
+    }
+
+    div.popup,
+    #quickLinks ul.popup,
+    #sortFilter ul.popup,
+    .abusive ul.popup {
+        background-color: #292323;
+        border: 1px solid #3a3a3a;
+    }
+
+    ul.popup li {
+        padding: 7px 5px;
+    }
+
+    /* Top */
+
+    .announcementsContainer {
+        background-color: #292828;
+        height: 40px;
+        padding-top: 5px;
+    }
+
+    #relatedThreadsLinkContainer {
+        background-color: #292828;
+        height: 20px;
+        padding-top: 10px;
+    }
+
+    /* Sidebar */
+
+    /* Ask Question */
+
+    #askaquestion a.askQuestionLink {
+        background-color: #3e697e77;
+        width: 300px;
+        color: #bdbdbd !important;
+        height: 25px;
+        padding-top: 10px;
+    }
+
+    /* Forum Selection */
+
+    #quickLinks #quickLinksText span {
+        color: #bdbdbd;
+    }
+
+    .Forums #categoryFilter h3 {
+        color: #bdbdbd;
+        text-transform: capitalize;
+        margin: 25px 25px 0px 25px;
+    }
+
+    #tagSearch {
+        width: auto !important;
+        border: none !important;
+        margin: 25px;
+        padding: 5px;
+    }
+
+    div#sidebar h3 {
+        margin: 15px 25px;
+    }
+
+    .ui-widget-content {
+        background-color: #292323;
+        border: 1px solid #3a3a3a;
+    }
+
+    .ui-widget-content li {
+        padding: 5px;
+    }
+
+    .ui-widget-content li:hover,
+    .ui-menu .ui-menu-item a:hover {
+        background-color: #2d2d2d !important;
+    }
+
+    /* User Card */
+
+    div.unified-baseball-card,
+    .unified-baseball-card-compact,
+    .unified-baseball-card-hover div.unified-baseball-card {
+        width: auto !important;
+        border: none !important;
+        padding: 25px;
+        border-top: 1px solid #3a3a3a !important;
+        border-bottom: 1px solid #3a3a3a !important;
+        background-color: #292828 !important;
+    }
+
+    div#msdn-technet-en-home div#homePageSidebarContainer,
+    div#msdn-technet-en-thread div#threadPageSidebarContainer,
+    div#threadPageActionsContainer .quickActions,
+    #homePageSidebarContainer div#sidebar,
+    #threadPageSidebarContainer div#sidebar {
+        min-width: 340px;
+        background-color: #292828 !important;
+    }
+
+    .unified-baseball-card-compact-hover .baseball-card-compact-header .baseball-card-summary,
+    .unified-baseball-card-compact .baseball-card-compact-header .baseball-card-summary,
+    .unified-baseball-card .baseball-card-header .baseball-card-summary {
+        padding: 0px 0px 5px 10px;
+        background-color: transparent;
+        border-bottom: 2px solid #3a3a3a;
+    }
+
+    .unified-baseball-card .baseball-card-display-name,
+    .unified-baseball-card-compact-hover .baseball-card-display-name,
+    .unified-baseball-card-compact .baseball-card-display-name {
+        padding-top: 20px;
+    }
+
+    .unified-baseball-card a.baseball-card-display-name:hover,
+    .unified-baseball-card-compact-hover a.baseball-card-display-name:hover,
+    .unified-baseball-card-compact a.baseball-card-display-name:hover {
+        text-decoration: none !important;
+        color: #0e568a !important
+    }
+
+    .unified-baseball-card-compact-hover .baseball-card-compact-header .baseball-card-summary .baseball-card-points-label,
+    .unified-baseball-card-compact .baseball-card-compact-header .baseball-card-summary .baseball-card-points-label,
+    .unified-baseball-card-compact-hover .baseball-card-compact-header .baseball-card-summary .baseball-card-percentile,
+    .unified-baseball-card-compact .baseball-card-compact-header .baseball-card-summary .baseball-card-percentile,
+    .unified-baseball-card .baseball-card-recent-activity,
+    .unified-baseball-card .baseball-card-joined,
+    .unified-baseball-card-compact-hover .baseball-card-recent-activity,
+    .unified-baseball-card-compact-hover .baseball-card-joined,
+    .unified-baseball-card-compact .baseball-card-recent-activity,
+    .unified-baseball-card-compact .baseball-card-joined,
+    p {
+        color: #8b8b8b !important;
+    }
+
+    #myThreadTable {
+        padding: 25px
+    }
+
+    /* Search Bar */
+
+    .searchboxinnercontainer,
+    #threadsearchbarContainer .searchbar .searchboxinnercontainer,
+    .searchbar .searchboxinnercontainer {
+        background-color: #1E1E1E;
+    }
+
+    .searchboxinnercontainer #searchbox {
+        height: 35px;
+        padding-left: 15px;
+    }
+
+    .searchbar table.searchboxinnercontainer td.imageWidth {
+        width: 10px;
+    }
+
+    /* Threads */
+
+    #allThreadsContainer,
+    #threadPageContentContainer {
+        border: none !important;
+    }
+
+    .threadblock {
+        background-color: #292828 !important;
+        padding: 30px 0px 10px 20px;
+        margin: 10px 0px;
+    }
+
+    /* Status */
+    .status {
+        background-color: #333 !important;
+        border: 1px solid #3a3a3a;
+    }
+
+    .status.answered {
+        background-color: #327a43 !important;
+    }
+
+    .status.proposed {
+        background-color: #364ca4 !important;
+    }
+
+
+    .threadsnippet .details {
+        border-left: 1px solid #3a3a3a;
+        padding-left: 15px
+    }
+
+    .threadsnippet .details .detailscontainer .breadcrumb {
+        border-top: 1px solid #3a3a3a;
+        padding: 10px 0px;
+        margin-top: 10px;
+    }
+
+    .threadsnippet .details .detailscontainer .breadcrumb a span {
+        color: #3e697e !important;
+    }
+
+    .metrics.smallgreytext {
+        border-top: 1px solid #3a3a3a;
+        padding: 10px 0px 0px 0px;
+        margin-top: 10px;
+    }
+
+    .threadsnippet .arrowcontainer .arrowdown {
+        display: none;
+    }
+
+    /* Thread */
+
+    /* Title */
+    span[name="subject"] {
+        font-size: 20px;
+        padding: 10px 0px 10px 0px;
+        border-bottom: solid 1px #4A525F !important;
+    }
+
+    #rssFeed {
+        display: none;
+    }
+
+    /* Bread Crumb */
+    .breadcrumb {
+        font-size: 14px;
+        padding: 15px 0px !important;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .EyebrowElement:after {
+        content: '/\00a0';
+    }
+
+    /* Forum Details Tip */
+    .forumDetailsTip img {
+        display: none;
+    }
+
+    .forumDetailsTip {
+        color: #eeeeee !important;
+        border: none !important;
+        background-color: #3d4146 !important;
+        box-shadow: 0px 0px 2px 0px rgba(163, 163, 163, 0.5) !important;
+    }
+
+    /* Messages */
+
+    #rootMessage li:first-child {
+        display: none;
+    }
+
+    ul.root {
+        margin: 0px !important;
+    }
+
+    li.message.root,
+    ul.message,
+    li.message,
+    .message {
+        background-color: #292828 !important;
+        padding: 10px 0px 5px 10px;
+        width: 99% !important;
+    }
+
+    .message .container a {
+        font-weight: bold;
+        color: #1a73b3 !important;
+        text-decoration: underline !important;
+    }
+
+    .message .container a:hover {
+        color: #0e568a !important;
+    }
+
+    li.message div.menu.thread {
+        padding: 10px 20px !important;
+        background-color: #333 !important;
+        width: 100px;
+    }
+
+    #answersList {
+        padding: 0px 10px
+    }
+
+    #answersList .message.answer {
+        border-bottom: solid 1px #595959 !important;
+    }
+
+    div.answers>h3,
+    div.replies>h3 {
+        color: #595959;
+        border: none;
+        margin: 20px 0px 20px 0px !important;
+        padding: 10px 0px 10px 0px !important;
+        border-top: solid 1px #595959 !important;
+        border-bottom: solid 1px #595959 !important;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    hr,
+    hr.sig {
+        border-top: solid 1px #595959 !important;
+    }
+
+    .messageContent {
+        border: none !important;
+    }
+
+    #msdn-technet-en-thread #threadPageContainer .messageContent .messageFooter .userInfo .unified-baseball-card-mini .profile-mini .profile-mini-header .profile-mini-userimage img {
+        height: 45px !important;
+        width: 45px !important;
+        margin-left: -17px;
+        margin-top: -25px !important;
+    }
+
+    #msdn-technet-en-thread #threadPageContainer .messageContent .messageFooter .userInfo .unified-baseball-card-mini .profile-mini .profile-mini-header .profile-mini-content {
+        margin-right: 10px;
+    }
+
+    /* Message */
+    .ltr div.answers ul.message,
+    .ltr div.replies ul.message {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    .ltr li.children {
+        border-top: 1px dashed #595959;
+    }
+
+    #msdn-technet-en-thread #threadPageContainer .children .children .messageContent,
+    div.expandedThreadContainer .children .children div.messageContent {
+        width: 90% !important;
+    }
+
+    /* Prettyprint - Syntaxhiglighter */
+    pre.prettyprint {
+        background-color: #373232 !important;
+        padding: 20px 5px 20px 5px;
+        border: 1px dashed #595959 !important;
+    }
+
+    .kwd {
+        color: #3b7cb6 !important;
+    }
+
+    .pln {
+        color: #b39143 !important;
+
+    }
+
+    .pun,
+    .opn,
+    .clo {
+        color: #0c8c7f !important;
+        font-weight: bold !important;
+    }
+
+    .typ {
+        color: #4293b1 !important;
+    }
+
+    .str {
+        color: #c05e4f !important;
+    }
+
+    .com {
+        color: #318c55 !important;
+    }
+
+    .tag {
+        color: #5252b0 !important;
+    }
+
+    .atn {
+        color: #920d92 !important;
+    }
+
+    .atv {
+        color: #1a7d1a !important;
+    }
+
+    /* Footer */
+
+    div#ux-footer {
+        background-color: #292323 !important;
+    }
+
+    /* Profile */
+
+    @media screen and (min-width: 769px) {
+        .sidebar {
+            background-color: #292828;
+            border-right: solid 1px #4A525F !important;
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        .main-content {
+            background-color: #292828;
+        }
+    }
+
+    .rankings-right {
+        border-left: none;
+    }
+
+    #MainContent .statistic-group,
+    .rankings-left,
+    .rankings-right .rank-cell {
+        background-color: #292323;
+        border: solid 1px #4A525F !important;
+    }
+
+    /* Other UI Elements */
+
+    #allCategoryPopupContainer #forumDetailsContainer #submitAllCategories {
+        color: #bdbdbd !important;
+    }
+
+    /* Selected Tags */
+
+    #selectedTags {
+        padding: 25px;
+    }
+
+    #msdn-technet-en-home .tagcontainer {
+        height: 100%;
+        min-height: 35px;
+        width: 290px;
+        display: inline-block;
+        border: none;
+        margin: 5px 0px;
+        background-color: #3d4146 !important;
+    }
+
+    #msdn-technet-en-home .tags .forumtag {
+        vertical-align: bottom !important;
+        width: 80%;
+    }
+
+    #msdn-technet-en-home .forumremove a,
+    #msdn-technet-en-home .tags .forumtag {
+        color: #bdbdbd !important;
+    }
+}
